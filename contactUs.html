@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Some Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <style>
+      ul.topnav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        font-family: arial;
+        text-align: left;
+        width: 100%;
+        z-index: 1;
+        position: fixed;
+        top: 0;
+      }
+      ul.topnav li {
+        float: left;
+      }
+      ul.topnav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        float: left;
+        font-size: 17px;
+        border-right: 1px solid #bbb;
+      }
+      ul.topnav li a:hover:not(.active) {
+        background-color: #ddd;
+        color: black;
+      }
+      ul.topnav li a.active {
+        background-color: #4caf50;
+      }
+      ul.topnav li.right {
+        float: right;
+      }
+      @media screen and (max-width: 720px) {
+        ul.topnav li {
+          width: 100%;
+        }
+        ul.topnav a {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <ul class="topnav">
+      <li><a class="active" href="/">Home</a></li>
+      <li><a href="/OurServices">Services</a></li>
+      <li><a href="/ContactUs">Contact</a></li>
+      <li class="right"><a href="/">About</a></li>
+    </ul>
+
+      <!-- Contact Section -->
+      <div class="w3-container w3-padding-32" id="contact">
+        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">
+          Contact
+        </h3>
+        <p>Lets get in touch and talk about your next project.</p>
+        <form action="/action_page.php" target="_blank">
+          <input
+            class="w3-input w3-border"
+            type="text"
+            placeholder="Name"
+            required
+            name="Name"
+          />
+          <input
+            class="w3-input w3-section w3-border"
+            type="text"
+            placeholder="Email"
+            required
+            name="Email"
+          />
+          <input
+            class="w3-input w3-section w3-border"
+            type="text"
+            placeholder="Subject"
+            required
+            name="Subject"
+          />
+          <input
+            class="w3-input w3-section w3-border"
+            type="text"
+            placeholder="Comment"
+            required
+            name="Comment"
+          />
+          <button class="w3-button w3-black w3-section" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </form>
+      </div>
+
+      <!-- Image of location/map -->
+      <div class="w3-container">
+        <img
+          src="https://www.w3schools.com/w3images/map.jpg"
+          class="w3-image"
+          style="width: 100%"
+        />
+      </div>
+
+      <!-- End page content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-16">
+      <p>
+        Powered by
+        <a
+          href="https://www.w3schools.com/w3css/default.asp"
+          title="W3.CSS"
+          target="_blank"
+          class="w3-hover-text-green"
+          >w3.css</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
+
+<!-- This is the css file:
+     (have a play with the colours and features!)-->
+
+<!-- END -->
